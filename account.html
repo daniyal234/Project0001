@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title> Cart-page</title>
+    <link rel="stylesheet" href="E-commerce.css">
+    <link href="https://fonts.googleapis.com/css2?family=Island+Moments&family=Roboto:wght@300&family=Sora:wght@500&display=swap" 
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+  <script src="https://kit.fontawesome.com/2bf4f6c88c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<!-- header -->
+ 
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/logo.png" width="125px">
+            </div>
+            <!-- navbar -->
+            <nav>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Prodcuts</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Account</a></li>
+                </ul>
+            </nav>
+            <!-- adding card tag -->
+            <img src="images/cart.png" width="30px" height="30px">
+            <img src="images/menu.png" class="menu-icon">
+        </div>
+        <!-- row -->
+      
+    </div>
+  <!-- ---------------------------------Account page-------------------------------------- -->
+  <div class="account-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+                <img src="images/image1.png" width="100%">
+
+            </div>
+            <div class="div-col-2">
+                <div class="form-container">
+                    <div class="form-btn">
+                        <span onclick="login()">Login</span>
+                        <span onclick="register()">Register</span>
+                        <!-- ==================indicator------------------ -->
+                        <hr id="indicator">
+                    </div>  
+                    <!-- ===form=====  -->
+                    <form id="loginform">
+                        <input type="text" placeholder="username">
+                        <input type="Password" placeholder="Password">
+                        <button type="Submit" class="btn" >login</button>
+                        <br>
+                      <a>Forgot Password</a>
+                    </form>
+                    <form  id="Regform">
+                        <input type="text" placeholder="username">
+                        <input type="email" placeholder="Email">
+                        <input type="Password" placeholder="Password">
+                        <button type="Submit" class="btn" >Register</button>
+                     
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+   
+<!-- <-----------------------footerrrrrrrrr------------------------------------------------------ -->
+                <div class="footer">
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="footer-col-1">
+                                <h3>Download our app</h3>
+                                <p>Download app for andriod and ios mobile</p>
+                            </div>
+                            <div class="footer-col-2">
+                                <img src="images/logo-white.png" alt="">
+                <p>Our purpose is to sustainably make the pleasure and benefits of sports of accesible to many</p>
+                <div class="app-logo">
+                    <img src="images/play-store.png" alt="">
+                    <img src="images\/app-store.png" alt="">
+                </div>
+                            </div>
+                          
+                            <div class="footer-col-3">
+                                <h3>Usefull links</h3>
+                                <ul>
+                                    <li> coupans</li>
+                                    <li>blog post</li>
+                                    <li>Return policy</li>
+                                    <li>Join Affilitate</li>
+                                </ul>
+                            </div>
+                            <div class="footer-col-4">
+                <h3>Follow us</h3>
+                <ul>
+                    <li> Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>You tube</li>
+                </ul>
+            </div> 
+            <hr>
+            <p class="copyright">CopyRight 2022</p>
+                        </div>
+                    </div>
+                </div>
+<!-- 
+---------------------JS for toogle form------------------- -->
+<script>
+    var loginform=document.getElementById("loginform");
+    var Regform=document.getElementById("Regform");
+    var indicator=document.getElementById("indicator");
+    function register(){
+        Regform.style.transform="translatex(0px)";
+        loginform.style.transform="translatex(0px)";
+        indicator.style.transform="translatex(100px)";
+    }
+    function login(){
+        Regform.style.transform="translatex(300px)";
+        loginform.style.transform="translatex(300px)";
+        indicator.style.transform="translatex(0px)";
+    }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
